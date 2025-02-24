@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bw0ud15g0obxp"]
+
+[ext_resource type="Texture2D" uid="uid://bhfp5htp0la1v" path="res://bubble-removebg-preview.png" id="1_ofxf6"]
+
+[node name="bubbles" type="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.588235)
+position = Vector2(109, 71)
+scale = Vector2(0.2085, 0.196)
+texture = ExtResource("1_ofxf6")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-23.9808, 10.2041)

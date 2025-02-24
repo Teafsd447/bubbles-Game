@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b812op6cwl4jn"]
+
+[ext_resource type="Texture2D" uid="uid://c8boynxxo1t2d" path="res://shark-removebg-preview.png" id="1_mhemh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dbfeo"]
+size = Vector2(151, 76)
+
+[node name="shark" type="CharacterBody2D"]
+position = Vector2(281, 116)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(72, 10)
+scale = Vector2(0.345027, 0.450903)
+texture = ExtResource("1_mhemh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(81.5, 20)
+shape = SubResource("RectangleShape2D_dbfeo")

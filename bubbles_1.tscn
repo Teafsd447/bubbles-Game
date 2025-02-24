@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5xqvthg3asbh"]
+
+[ext_resource type="Texture2D" uid="uid://bwyfy0n51f5hr" path="res://3-removebg-preview.png" id="1_byw7m"]
+[ext_resource type="Script" path="res://bubbles_1.gd" id="2_xrcb0"]
+
+[node name="bubbles_1" type="Sprite2D"]
+modulate = Color(0.788235, 0.901961, 1, 1)
+self_modulate = Color(1, 1, 1, 0.666667)
+position = Vector2(2737, -38)
+scale = Vector2(0.191583, 0.193597)
+texture = ExtResource("1_byw7m")
+script = ExtResource("2_xrcb0")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(15.6591, 25.8268)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3.2417, -9.81996)
